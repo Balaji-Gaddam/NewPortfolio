@@ -1,38 +1,904 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Courgette&family=Creepster&family=Eczar:wght@400;500&family=Montserrat:wght@400;500&family=Moon+Dance&family=Neuton:ital,wght@0,200;1,400&family=PT+Serif&family=Patua+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Wet+Paint&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('https://www.pngall.com/wp-content/uploads/5/Thanos-Hand-PNG-Pic.png');
+  font-family:Poppins;
+}
+*a,i{
+  cursor: pointer;
+}
+
+.NavbarItems {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 9999;
+  
+}
+.activate{
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  position: fixed;
+  z-index: 9999;
+  transition: 0.3s ease-in-out;
+}
+ .Navbar-logo {
+  width: 20%;
+}
+.Navbar-logo i {
+  font-size: 25px;
+}
+.Nav-menu {
+  list-style: none;
+  background-color:#0E2461;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 10%;
+  opacity: 0;
+  align-items: stretch;
+  margin: 0;
+  z-index: -1;
+  border-radius: 2px;
+  transition: 0.6s ease;
+  margin-left: 70%;
+  padding: 4rem;
+  cursor: pointer;
+}
+.nav-links {
+  text-decoration: none;
+  color:white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+}
+  .Nav-menu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.5s ease-in;
+  }
+  .menu-icons {
+    display: block;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+  }
+  .menu-icons i{
+    font-size: 2rem;
+    padding-left: 2px;
+    color: white;
+  }
+  .menu-icons_color{
+    color: orange;
+    font-size: 2rem;
+    padding-left: 2px;
+  }
+  .NavContact{
+    opacity: 0.5;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    white-space: nowrap;
+  }
+.NavName{
+  opacity: 0.6;
+  margin-left: 10px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  color: white;
+}
+.TitleDivMain{
+  display: flex;
+}
+.Download_Button button{
+  background-color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+/* <-------------------HomePage--------------------------------------> */
+
+.HomeSec{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color:#0E2461;
+  background: url('https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-3440x1440-4523.jpg');
+  background-size: cover;
+}
+.HomeSec .HomeLeft{
+  width: 70%;
+  height: 100vh;
+}
+.svgLeft Svg{
+  width: 30%;
+  position: absolute;
+  top: 15%;
+  left: 85%;
+  transform: translate(-100%);
+}
+.svgLeft lord-icon {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  rotate: 35deg;
+}
+
+.HomeSec .HomeRight{
+  width: 30%;
+  height: 100vh;
+  padding-top: 5rem;
+}
+.HomeLeft .HeroText{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%);
+  color:White;
+  font-size: 3rem;
+}
+.HeroText h6{
+  color:white;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.HeroText h4{
+  font-size: 2rem;
+}
+.HeroText h6 span{
+  font-size: 8rem;
+  margin-left: 1rem;
+  color:white ;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.HeroText a{
+  text-decoration: none;
+}
+
+.imgBorder{
+  border: 5px solid white;
+  width: 80%;
+  position: relative;
+  top: 15%;
+  right: 20%;
+  
+}
+
+.imgBorder img{
+  width: 100%;
+  position: relative;
+  right: 10%;
+  bottom: 2rem;
+  border-radius: 0px;
+  box-shadow: 20px 10px 30px 2px #98eeff, 0 1px 1px #79ebff;
+}
+.HomeRight h6 span i{
+  color: red;
+
+}
+.HomeRight i{
+  color: #4831d4;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+.svgLeft i{
+  color: white;
+ 
+}
+
+/* 
+<------------------------Skill page--------------------------------> */
+.SkillMain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding:5rem 10rem;
+
+}
+
+.SkillCard img{
+  width: 80%;
+}
+.SkillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  width: 10rem;
+  height: 10rem;
+  gap: 10px;
+  color: black;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.SkillsDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://wallpapers.com/images/hd/low-poly-lava-ar55chrbs2zvrovi.jpg');
+}
+.SkillsDiv h1{
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: #4962B2;
+}
+.SkillCard:hover{
+  transform: scale(1.2);
+  box-shadow:0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.20);
+  transition: 0.2s ease-in-out;
+
+}
+.TitleDiv h1{
+  margin-top: 3rem;
+  font-size: 4rem;
+  color: #4962B2;
+}
+.Card-Total{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+/* <---------------------EDUCATION PAGE ----------------------------------------> */
+
+.main-Edu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Sub-Edu{
+  padding:5rem 10rem;
+}
+.DIV-normal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 20px;
+}
+
+.DIV-normal img{
+  width: 30%;
+  border-radius: 20px;
+}
+.DIV-rev  img{
+  width: 30%;
+  border-radius: 20px;
+}
+.DIV-rev{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 8rem;
+}
+.Edu-Text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Edu-Text h2{
+  color:#0D2464;
+
+}
+.Edu-Text h3{
+  color: #0D2464;
+  font-size: 1.5rem;
+}
+.Edu-Text p{
+  color: #262548;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 20px;
+	width: 160px;
+}
+
+.progress-done {
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+
+
+/* <----------------------------Project Details ------------------------------------------------> */
+.ProjectDiv{
+  background-color: #0C1C3B;
+  background-image: url('https://wallpapers.com/images/hd/low-poly-lava-ar55chrbs2zvrovi.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.ProjectMain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding:5rem 11rem;
+}
+
+.ProjectCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:white;
+  width: 20rem;
+  height: 30rem;
+  color: black;
+  justify-content: space-around;
+  padding: 3rem;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow:0 4px 2px 0 rgba(255, 255, 255, 0.9), 0 2px 10px 0 rgba(255, 255, 255, 0.8);
+}
+.ProjectCard img{
+  width: 100%;
+  border-radius: 20px;
+}
+.ProjectCard img:hover{
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+.ProjectCard a{
+  text-decoration: none;
+  color: white;
+  background-color: #4962B2;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+}
+.ProjectCard a:hover{
+  background-color: white;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+
+
+/* .retro{
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color:#91c431;
+  padding:0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: solid 0.125rem white;
+  box-shadow: 0.25rem 0.25rem white;
+  transition:transform 50ms, box-shadow 50ms;
+    cursor: pointer;
+    transform: translate(1,1);
+    margin: auto;
+    color: white;
+}
+
+.retro:active{
+  
+  box-shadow: 0.125rem 0.125rem white;
+} */
+
+/* 11 */
+.btn-11 {
+  border: none;
+  background: rgb(251,33,117);
+    background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  background: rgb(251,33,117);
+  background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* <-------------------------Icons css---------------------------> */
+
+.links-container {
+  width: 100%;
+  margin: 20px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-links {
+  width: 100%;
+  text-align: center;
+}
+.contact-links > li {
+  display: inline-block;
+  padding: 10px;
+}
+.contact-links > li a {
+  position: relative;
+  text-decoration: none;
+  background:#303A71;
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.contact-links > li a:before {
+  content: "";
+  position: absolute;
+  top: 7%;
+  left: 7%;
+  width: 85%;
+  height: 85%;
+  opacity: 0.8;
+  border: 1px solid #1b1725;
+  border-radius: 50%;
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+.contact-links  li a:hover:before {
+  opacity: 0;
+  transform: scale(1.6);
+}
+
+.contact-links li a:hover span {
+  -webkit-animation: slide-icon 0.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
+  animation: slide-icon 0.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
+}
+
+/* Rest of your CSS remains unchanged */
+
+.contact-links > li a:focus {
+  opacity: 0.85;
+}
+.contact-links > li a span {
+  font-size: 1.5em;
+  line-height: 50px;
+  color: #fff;
+}
+
+@-webkit-keyframes slide-icon {
+  49% {-webkit-transform: translateX(-80px);opacity: 0;}
+  50% {-webkit-transform: translateX(80px);}
+  80% {-webkit-transform: translateX(0);opacity: 1;}
+}
+@keyframes slide-icon {
+  49% {-webkit-transform: translateX(-80px);opacity: 0;}
+  50% {-webkit-transform: translateX(80px);}
+  80% {-webkit-transform: translateX(0);opacity: 1;}
+}
+
+@keyframes shiny-btn1 {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+/* <-------------------------------------Footer css-------------------------------------------------> */
+.Main-footer{
+  background-color: #0E2461;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
   color: white;
+  background: url('https://c4.wallpaperflare.com/wallpaper/681/720/910/lines-bands-wavy-neon-wallpaper-preview.jpg') no-repeat  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+/* <--------------------------------------------------------------preloder--------------------------------------------------> */
+
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),90%,10%);
+	--fg: hsl(var(--hue),90%,90%);
+	--primary: hsl(var(--hue),90%,50%);
+	--trans-dur: 0.3s;
+}
+/* body {
+	background-color: var(--bg);
+	color: var(--fg);
+	display: flex;
+	font: 1em/1.5 sans-serif;
+	height: 100vh;
+	transition:
+		background-color var(--trans-dur),
+		color var(--trans-dur);
+} */
+.pl {
+	--dur: 3s;
+	margin: auto;
+	position: relative;
+	width: 8em;
+	height: 8em;
+}
+.pl__nucleus,
+.pl__nucleus-particle {
+	position: absolute;
+}
+.pl__nucleus {
+	top: 50%;
+	left: 50%;
+	transform-style: preserve-3d;
+}
+.pl__nucleus-particle,
+.pl__ring,
+.pl__orbit,
+.pl__electron {
+	animation: particleTop var(--dur) linear infinite;
+}
+.pl__nucleus-particle {
+	background-color: var(--primary);
+	background-image: radial-gradient(37.5% 37.5% at 37.5% 37.5%,hsla(var(--hue),10%,90%,0.25) 48%,hsla(var(--hue),10%,90%,0) 50%);
+	border-radius: 50%;
+	box-shadow: -0.125em -0.125em 0 hsla(var(--hue),10%,10%,0.25) inset;
+	top: calc(50% - 0.5em);
+	left: calc(50% - 0.5em);
+	width: 1em;
+	height: 1em;
+	transition: background-color var(--trans-dur);
+}
+.pl__nucleus-particle:nth-child(2n) {
+	background-color: hsl(var(--hue),90%,70%);
+}
+.pl__nucleus-particle:nth-child(n + 4):nth-child(-n + 9) {
+	animation-name: particleMiddle;
+}
+.pl__nucleus-particle:nth-child(n + 10):nth-child(-n + 12) {
+	animation-name: particleBottom;
+}
+.pl__nucleus-particle:nth-child(2) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(3) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:nth-child(5) { animation-delay: calc(var(--dur) * -0.17); }
+.pl__nucleus-particle:nth-child(6) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(7) { animation-delay: calc(var(--dur) * -0.5); }
+.pl__nucleus-particle:nth-child(8) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:nth-child(9) { animation-delay: calc(var(--dur) * -0.83); }
+.pl__nucleus-particle:nth-child(11) { animation-delay: calc(var(--dur) * -0.33); }
+.pl__nucleus-particle:nth-child(12) { animation-delay: calc(var(--dur) * -0.67); }
+.pl__nucleus-particle:last-child { animation: none; }
+
+.pl__rings {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.pl__ring {
+	animation-name: ring;
+	transform-origin: 64px 64px;
+}
+.pl__ring:nth-child(n + 5):nth-child(-n + 7) {
+	animation-delay: calc(var(--dur) * -0.25);
+}
+.pl__orbit,
+.pl__electron {
+	animation-name: orbit;
+	transition: stroke var(--trans-dur);
+}
+.pl__orbit:first-child {
+	stroke: hsla(var(--hue),90%,50%,0);
+}
+.pl__orbit:nth-child(2) {
+	stroke: hsla(var(--hue),90%,50%,0.5);
+}
+.pl__orbit:nth-child(3) {
+	stroke: hsla(var(--hue),90%,50%,0.7);
+}
+.pl__ring:first-child .pl__orbit:first-child { stroke: hsla(var(--hue),90%,50%,0.3); }
+.pl__ring:nth-child(2) .pl__orbit { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(3) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(4) .pl__orbit { animation-delay: calc(var(--dur) * -0.375); }
+.pl__ring:nth-child(5) .pl__orbit:first-child { stroke: hsla(var(--hue),90%,50%,0.3); }
+.pl__ring:nth-child(6) .pl__orbit { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(7) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(2) { animation-delay: calc(var(--dur) * -0.125); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(3) { animation-delay: calc(var(--dur) * -0.25); }
+.pl__ring:nth-child(8) .pl__electron:nth-child(4) { animation-delay: calc(var(--dur) * -0.375); }
+
+/* Animations */
+@keyframes orbit {
+	from { stroke-dashoffset: 0; }
+	to { stroke-dashoffset: 580; }
+}
+@keyframes ring {
+	from { transform: rotate(0); }
+	to { transform: rotate(1turn); }
+}
+@keyframes particleTop {
+	from { transform: rotateY(0) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-35deg) translateY(-100%) rotateZ(35deg) rotateY(1turn); }
+}
+@keyframes particleMiddle {
+	from { transform: rotateY(0) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(90deg) translateY(-100%) rotateZ(-90deg) rotateY(1turn); }
+}
+@keyframes particleBottom {
+	from { transform: rotateY(0) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(0); }
+	to { transform: rotateY(-1turn) rotateZ(-145deg) translateY(-100%) rotateZ(145deg) rotateY(1turn); }
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes moveGradient {
   to {
-    transform: rotate(360deg);
+    background-position: 100% 50%;
   }
 }
+
+@keyframes moveGradient {
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+ @media  screen and (max-width:767px) {
+  .menu-icons i {
+    font-size: 2rem;
+    padding-left: 2px;
+  }
+  .HomeSec{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+  }
+  .HomeSec .HomeLeft{
+    width: 100%;
+  }
+  .HomeSec .HomeRight{
+    width: 100%;
+  }
+  .HomeLeft .HeroText{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    color:white;
+  }
+  .HeroText h6{
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .HeroText h4{
+    font-size: 1.2rem;
+  }
+  .HeroText h6 span{
+    font-size: 4rem;
+    margin-left: 1rem;
+    color:white ;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+  .svgLeft Svg{
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    left: 100%;
+    transform: translate(-112%);
+  }
+  .Nav-menu {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .HomeRight img{
+    width: 100%;
+    position: relative;
+    top: -10%;
+    left: 5%;
+    border-radius: 10px;
+  }
+  .imgBorder{
+    border: 2px solid white;
+    position:relative;
+    left: 10%;
+  }
+  .main-Edu{
+    display: flex;
+    flex-direction: column;
+  }
+  .DIV-normal{
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  .Sub-Edu{
+    padding:0;
+  }
+  .ProjectMain{
+    padding:0rem 0rem;
+  }
+  .SkillMain{
+    padding:2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .ProjectCard{
+    display: flex;
+    align-items: center;
+    width: 15rem;
+    height: 25rem;
+    color: black;
+    justify-content:center;
+    padding: 0rem;
+    margin-bottom: 10px;
+  }
+  .DIV-rev{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 4rem;
+  }
+  .Edu-Text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+  }
+  .Edu-Text h2{
+    color:#0D2464;
+    font-size: 1rem;
+  }
+  .DIV-normal img{
+    width: 50%;
+    border-radius: 20px;
+  }
+  .DIV-rev  img{
+    width: 50%;
+    border-radius: 20px;
+  }
+  .main-Edu h1{
+    font-size: 3rem;
+  }
+  .Navbar-logo {
+    width: 60%;
+  }
+  .imgBorder img{
+    width: 100%;
+    position: relative;
+    right: 10%;
+    bottom: 2rem;
+    box-shadow: -20px 22px 30px 2px #98eeff, 0 1px 1px #79ebff;
+  }
+  .ProjectCard img{
+    width: 90%;
+    border-radius: 20px;
+  }
+} 
