@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/NewPortfolio/static/css/main.d64e7575.css",
+    "main.js": "/NewPortfolio/static/js/main.7007382a.js",
+    "static/js/787.7da95b79.chunk.js": "/NewPortfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/1699456790796.jpg": "/NewPortfolio/static/media/1699456790796.043a1cd101c9ab49baa3.jpg",
+    "static/media/Balaji-Gaddam-Resume.pdf": "/NewPortfolio/static/media/Balaji-Gaddam-Resume.c6d8edc63f9aa52c3296.pdf",
+    "static/media/New Project.png": "/NewPortfolio/static/media/New Project.43eba9a0b697bd216ca1.png",
+    "static/media/python.png": "/NewPortfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/atom.png": "/NewPortfolio/static/media/atom.17e5cb984343d1346ebd.png",
+    "static/media/mysql.png": "/NewPortfolio/static/media/mysql.bdbd1eb709e4c13258d2.png",
+    "static/media/github.png": "/NewPortfolio/static/media/github.553c66159c5672f25df6.png",
+    "static/media/javascript.png": "/NewPortfolio/static/media/javascript.38323140666580081f57.png",
+    "static/media/dj.png": "/NewPortfolio/static/media/dj.fe6b5be95eae92da1e4e.png",
+    "static/media/html.png": "/NewPortfolio/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/photoshop.png": "/NewPortfolio/static/media/photoshop.339f174c692e921a204a.png",
+    "static/media/css-3.png": "/NewPortfolio/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap.png": "/NewPortfolio/static/media/bootstrap.268c4375260420e8d982.png",
+    "index.html": "/NewPortfolio/index.html",
+    "main.d64e7575.css.map": "/NewPortfolio/static/css/main.d64e7575.css.map",
+    "main.7007382a.js.map": "/NewPortfolio/static/js/main.7007382a.js.map",
+    "787.7da95b79.chunk.js.map": "/NewPortfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d64e7575.css",
+    "static/js/main.7007382a.js"
+  ]
+}
