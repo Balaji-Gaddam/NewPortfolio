@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+// import { Routes, Route, useNavigate } from 'react-router-dom';
 import Preloder from './components/Preloder';
 
 function App() {
@@ -34,30 +34,11 @@ function App() {
         // Render the content when loading is complete
         <>
           <Navbar />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <HomePage />
-                  <Skills />
-                  <Education />
-                  <Projects />
-                  <Footer />
-                </>
-              }
-            />
-            <Route path='/Home'
-            element={
-              <>
-                  <HomePage />
-                  <Skills />
-                  <Education />
-                  <Projects />
-                  <Footer />
-              </>
-            } />
-          </Routes>
+           <HomePage />
+           <Skills />
+           <Education />
+           <Projects />
+           <Footer />
         </>
       )}
     </div>
